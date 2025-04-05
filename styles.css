@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Add padding to the body to prevent content from being hidden under the navbar */
+body {
+    background: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px 0; /* Add padding to the top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top instead of center */
+    height: auto; /* Remove fixed height to allow scrolling */
+}
+
+/* Ensure the container is properly spaced */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin-top: 20px; /* Add margin to create space from the top */
+}
+
+/* Sidebar Adjustments */
+.sidebar {
+    width: 30%;
+    background: rgba(2, 146, 0, 0.418);
+    padding: 20px;
+    text-align: left;
+    border-right: 1px solid rgba(255, 255, 255, 0.514);
+    
+}
+
+.profile-pic {
+    width: 120px; /* Ensure width is equal to height */
+    height: 120px; /* Set height explicitly */
+    border-radius: 50%; /* Make it a perfect circle */
+    border: 3px solid rgba(79, 230, 33, 0.5); /* Add a border for styling */
+    box-shadow: 0 0 10px rgba(37, 233, 56, 0.3); /* Add a subtle shadow */
+    object-fit: cover; /* Ensure the image scales properly within the circle */
+    padding-left: 0px; /* Add padding to the left */
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 5px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00ff00;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin: 30px auto;
+    
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-container {
+    display: inline-flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Content Area */
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+.intro h1 {
+    color: #00ff00;
+    font-size: 24px;
+}
+
+.highlight {
+    color: #00f00f;
+    
+    font-weight: bold;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(45deg, #00ffd5, #00cc07);
+    border-radius: 5px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* General Section Styling */
+.education, .projects {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.about-me, .info{
+    margin-top: 20px;
+    padding: 15px;
+    background: rgb(0, 146, 114);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.about-me h2, .education h2, .projects h2 {
+    margin-bottom: 10px;
+    color: #00ff00;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.about-me p, .education ul, .projects ul {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.education ul, .projects ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.education li, .projects li {
+    margin-bottom: 8px;
+}
+
+/* Highlight Links in Projects */
+.projects li strong {
+    color: #00ff00;
+}
+
+.info p {
+    font-weight: bold;
+    color: #ffffff;
+    font-family:'poppins';
+    font-size: 14px;
+    
+}
+
+.intro p {
+    color: #ffffff;
+    font-family:'poppins';
+    
+}
+
+.info p strong {
+    color: #00ff00;
+    font-size: 18px;
+}
+
+.info p img {
+    transform: scale(10%);
+}
