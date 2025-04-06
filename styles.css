@@ -2,8 +2,8 @@
 
 /* Add padding to the body to prevent content from being hidden under the navbar */
 body {
-    background: #121212;
-    color: #fff;
+    background: #f9f9f9; /* Light background */
+    color: #333; /* Dark text for contrast */
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px 0; /* Add padding to the top and bottom */
@@ -11,60 +11,68 @@ body {
     justify-content: center;
     align-items: flex-start; /* Align items to the top instead of center */
     height: auto; /* Remove fixed height to allow scrolling */
+    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Ensure the container is properly spaced */
 .container {
     display: flex;
-    width: 80%;
-    max-width: 1200px;
-    background: rgba(255, 255, 255, 0.1);
+    flex-direction: column; /* Stack child elements vertically */
+    width: 100%; /* Ensure it doesn't exceed the viewport width */
+    max-width: 1200px; /* Constrain the maximum width */
+    background: #ffffff; /* White container background */
     backdrop-filter: blur(15px);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    margin-top: 20px; /* Add margin to create space from the top */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    box-sizing: border-box; /* Include padding and borders in width */
 }
 
 /* Sidebar Adjustments */
+.sidebar, .content {
+    width: 100%; /* Ensure child elements take full width of the container */
+    box-sizing: border-box; /* Prevent overflow due to padding or borders */
+    background: rgba(0, 200, 100, 0.1);
+}
+
 .sidebar {
-    width: 30%;
-    background: rgba(2, 146, 0, 0.418);
+    background: rgba(0, 200, 100, 0.1); /* Light green background */
     padding: 20px;
     text-align: left;
-    border-right: 1px solid rgba(255, 255, 255, 0.514);
-    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
 }
 
 .profile-pic {
     width: 120px; /* Ensure width is equal to height */
     height: 120px; /* Set height explicitly */
     border-radius: 50%; /* Make it a perfect circle */
-    border: 3px solid rgba(79, 230, 33, 0.5); /* Add a border for styling */
-    box-shadow: 0 0 10px rgba(37, 233, 56, 0.3); /* Add a subtle shadow */
+    border: 4px solid rgba(0, 200, 100, 0.5); /* Light green border */
+    box-shadow: 0 0 10px rgba(0, 200, 100, 0.3); /* Subtle shadow */
     object-fit: cover; /* Ensure the image scales properly within the circle */
     padding-left: 0px; /* Add padding to the left */
 }
 
 .social-links a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8); /* Darker link color */
     margin: 5px;
     font-size: 12px;
     transition: 0.3s;
 }
 
 .social-links a:hover {
-    color: #00ff00;
+    color: #00c864; /* Green hover effect */
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
     margin: 30px auto;
-    
     padding: 12px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(0, 200, 100, 0.1); /* Light green button background */
+    color: #00c864; /* Green text */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -79,24 +87,27 @@ body {
 }
 
 .btn:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 200, 100, 0.2); /* Slightly darker green on hover */
 }
 
 /* Content Area */
 .content {
-    width: 70%;
     padding: 20px;
 }
 
 .intro h1 {
-    color: #00ff00;
+    color: #00c864; /* Green heading */
     font-size: 24px;
 }
 
+.intro{
+    margin-left: 0px;
+}
+
 .highlight {
-    color: #00f00f;
-    
+    color: #008c4a; /* Darker green for highlights */
     font-weight: bold;
+    
 }
 
 .skills {
@@ -130,36 +141,39 @@ body {
 }
 
 /* General Section Styling */
-.education, .projects {
-    margin-top: 20px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
+.skills, .education, .projects, .about-me {
+    margin-top: -20px;
+    padding: 10px;
+    background: #f1f1f1; /* Light gray background */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #333; /* Dark text */
 }
 
-.about-me, .info{
-    margin-top: 20px;
+.info {
+    margin-top: -100px;
+    margin-right: 10px;
+    margin-left: 590px;
+    margin-bottom: 100px;
     padding: 15px;
-    background: rgb(0, 146, 114);
+    background: #f1f1f1; /* Light gray background */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #000000; /* Dark text */
 }
 
 .about-me h2, .education h2, .projects h2 {
     margin-bottom: 10px;
-    color: #00ff00;
+    color: #00c864; /* Green headings */
     font-size: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 5px;
 }
 
 .about-me p, .education ul, .projects ul {
     font-size: 14px;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
+    color: #000000; /* Medium gray text */
 }
 
 .education ul, .projects ul {
@@ -173,25 +187,32 @@ body {
 
 /* Highlight Links in Projects */
 .projects li strong {
-    color: #00ff00;
+    color: #008c4a; /* Darker green for emphasis */
 }
+
+
+.welcome {
+    display: flex;
+    justify-content: center;
+}
+
 
 .info p {
     font-weight: bold;
-    color: #ffffff;
+    color: #333; /* Dark text */
     font-family:'poppins';
     font-size: 14px;
     
 }
 
 .intro p {
-    color: #ffffff;
+    color: #000000;
     font-family:'poppins';
     
 }
 
 .info p strong {
-    color: #00ff00;
+    color: #00c864; /* Green for emphasis */
     font-size: 18px;
 }
 
