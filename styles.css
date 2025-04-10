@@ -40,6 +40,19 @@ body {
 
 /* Profile Picture */
 .profile-pic {
+    margin-left: 120px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 200, 100, 0.5);
+    box-shadow: 0 0 10px rgba(0, 200, 100, 0.3);
+    background-image: url('https://lh3.googleusercontent.com/pw/AP1GczPEY2lt3OjZEMxPeCEh7-Vv4qoTnQWh8BQIu1s2bkE5qJAle83X3Hbfjkx0bkPMk19Npy7shcciyORO5RGEV8ZV8ibObV0J46N6iWtTylAOFrP62bzDUAD9CbXUPmVY9TJRw7xAW9Vs7sDi-LbXFJ8K=w645-h913-s-no-gm?authuser=0');
+    background-size: cover;
+    background-size: 110%;
+    background-position: center;
+    margin-bottom: 20px;
+}
+/*.profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -47,7 +60,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 200, 100, 0.3);
     object-fit: cover;
     margin-bottom: 20px;
-}
+}*/
+
 
 .intro h1 {
     color: #00c864;
